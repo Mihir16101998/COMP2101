@@ -1,0 +1,1 @@
+﻿get-ciminstance win32_networkadapterconfiguration |?{$_.ipenabled -eq "true"} | ft -AutoSize Description,Index,IPSubnet,DNSDomain,DNSServerearchOrder,IPAddress
